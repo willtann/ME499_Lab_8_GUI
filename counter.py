@@ -46,10 +46,8 @@ class Interface(QMainWindow):
     #set the counter from the text box
     def setval(self):
         val = self.textbox.text()
-        self.count=int(val)
+        self.count= int(val)
         self.textbox.clear()
-
-
 
 if __name__ == '__main__':
     app = QApplication([])

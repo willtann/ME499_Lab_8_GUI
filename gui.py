@@ -30,7 +30,7 @@ class Interface(QMainWindow):
         # You probably want to add in other interface elements here
 
         """ Value label """
-        self.label = QLabel('0', self)
+        self.label = QLabel('0')
         self.label.setAlignment(Qt.AlignCenter)
         layout.addWidget(self.label)
 
@@ -45,7 +45,7 @@ class Interface(QMainWindow):
 
     # convert slider value to string for label
     def current_label(self, value):
-        self.label.setText(str(value))
+        return self.label.setText(str(value))
 
 
 if __name__ == '__main__':
@@ -56,4 +56,6 @@ if __name__ == '__main__':
     interface.show()
 
     app.exec_()
+
+
 
