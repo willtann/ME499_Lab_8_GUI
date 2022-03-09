@@ -17,7 +17,6 @@ class SliderDisplay(QWidget):
         self.units = units
         self.ticks = ticks
 
-        # Your code goes in here
         """ Value label """
         self.label = QLabel(self.name.format(0) + self.units)
         self.label.setAlignment(Qt.AlignCenter)
@@ -50,4 +49,3 @@ if __name__ == '__main__':
     slider.show()
 
     app.exec_()
-
